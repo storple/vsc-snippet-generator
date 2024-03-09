@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snippet Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Snippet Generator</h1>
+        <h2>(for VSCode)</h2>
+        <div class="textFields">
+            <div class="inputContainer">   
+                <div class="inputRow">
+                    <input class="smallField" id="titleField" placeholder="Title (optional)" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="off" wrap="off">
+                    <input class="smallField" id="descriptionField" placeholder="Description (optional)" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="off" wrap="off">          
+                </div>
+                <textarea id="inputField" placeholder="Enter snippet..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="off" wrap="off"></textarea>
+            </div>
+            <div class="outputContainer">
+                <textarea id="outputField" readonly>
+"": {
+    "prefix": "",
+    "body": [
+        ""
+    ],
+    "description": ""
+}
+                </textarea>
+            </div>
+        </div>
+        <footer>
+            <p>Created by <a href="https://github.com/storple">Storple on GitHub!</a></p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
